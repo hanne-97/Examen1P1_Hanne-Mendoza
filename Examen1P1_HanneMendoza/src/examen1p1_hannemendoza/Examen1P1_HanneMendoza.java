@@ -161,14 +161,13 @@ static Random rand = new Random();
             System.out.println("Tamaño inválido debe ingresar un valor mayor a 20 y que sea par");
             tam = kore.nextInt();
         }
-        
-        for(int i = 1 ; i <= tam; i++){
-            System.out.print(" "); 
-            for(int j = 1 ; j <= (i*2)-1  ; j++){
-                 System.out.print("*");
-            }
-          
-        System.out.println();    
+        for(int i = 0 ; i<tam; i++){
+            for(int j = i; j<tam-1; j++)
+                System.out.print(" ");
+            for(int j = 1 ; j<= (i*2)-1; j++)
+                System.out.print("*");
+            
+            System.out.println("");
         }
         
     }// 2 metodo
